@@ -16,11 +16,27 @@ const Carrousel = () => {
         slidesToScroll: 1
     };
 
+    const getSliderHeight = () => {
+
+        var height = 0;
+
+        if(window.innerHeight > 700) {
+            height = window.innerHeight - 100;
+        } else {
+            height = 600;
+        }
+
+        return height;
+
+    };
+
+    const height = getSliderHeight();
+
     return (
         <div
             className='carrousel_wrapper'
             style={{
-                height: `${window.innerHeight}px`,
+                height: `${height}px`,
                 overflow: 'hidden'
             }}
         >
@@ -30,7 +46,7 @@ const Carrousel = () => {
                         className='carrousel_image'
                         style={{
                             background: `url(${slide_one})`,
-                            height: `${window.innerHeight}px`
+                            height: `${height}px`
                         }}
                     ></div>
                 </div>
@@ -39,7 +55,7 @@ const Carrousel = () => {
                         className='carrousel_image'
                         style={{
                             background: `url(${slide_two})`,
-                            height: `${window.innerHeight}px`
+                            height: `${height}px`
                         }}
                     ></div>
                 </div>
@@ -48,7 +64,7 @@ const Carrousel = () => {
                         className='carrousel_image'
                         style={{
                             background: `url(${slide_three})`,
-                            height: `${window.innerHeight}px`
+                            height: `${height}px`
                         }}
                     ></div>
                 </div>
