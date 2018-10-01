@@ -7,7 +7,7 @@ import Featured from './components/featured';
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{ height: "1500px", background: "blue"}}>
+      <div className="App" style={{ height: "1500px", background: "rgb(57, 189, 235)"}}>
         <Header />
         <Featured/>
       </div>
