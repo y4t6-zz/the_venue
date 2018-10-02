@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
+import MyButton from '../utils/MyButton';
+
 class Discount extends Component {
 
     state = {
@@ -43,9 +45,12 @@ class Discount extends Component {
                             <h3>Purchase tickets before 20th JUNE</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                            <div>
-                                button
-                            </div>
+                            <MyButton
+                                text='Purchase tickets'
+                                bck='#ffa800'
+                                color='#fff'
+                                href='http://google.com.ua'
+                            />
 
                         </div>
                     </Slide>
