@@ -1,3 +1,16 @@
+## Deploy on Surge
+**Instruction**:
+If you have not **surge** yet, install it:
+```sh
+$ npm install -g surge
+```
+You can see more about **surge** here https://surge.sh/
+Then build project and publish it on **surge**:
+```sh
+$ npm run build
+$ surge -p build
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
